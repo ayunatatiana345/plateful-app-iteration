@@ -57,6 +57,6 @@ Access the application at `http://127.0.0.1:8000`.
 
 - Run the tests: `php artisan test`
 
-## Lisensi
+## License
 
 Internal project. If you plan to publish this, add license information here.
