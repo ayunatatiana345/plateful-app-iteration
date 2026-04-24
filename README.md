@@ -1,14 +1,14 @@
 # Plateful App
 
-Aplikasi web untuk mengelola **inventori makanan**, **donasi**, dan **meal plan**, lengkap dengan **dashboard** dan **analytics**.
+A web application for managing **food inventory**, **donations**, and **meal plans**, complete with a **dashboard** and **analytics**.
 
-## Fitur Utama
+## Main Fiture
 
-- **Inventory**: kelola data `FoodItem` (stok dan status)
-- **Meal Plans**: susun rencana menu/meal plan
-- **Donations**: pencatatan dan pelacakan donasi
-- **Analytics**: pencatatan aktivitas melalui `AnalyticsLog`
-- **Auth**: halaman autentikasi bawaan Laravel (register + input _household size_ opsional)
+- **Inventory**: Manage `FoodItem` data (stock and status)
+- **Meal Plans**: create meal plans
+- **Donations**: record and track donations
+- **Analytics**: log activity via `AnalyticsLog`
+- **Auth**: Laravel's built-in authentication page (sign up + optional `household size` input)
 
 ## Tech Stack
 
@@ -16,31 +16,31 @@ Aplikasi web untuk mengelola **inventori makanan**, **donasi**, dan **meal plan*
 - **MySql** (default dev database: `plateful-app`)
 - **Vite + Tailwind CSS** (Frontend tooling)
 
-## Prasyarat
+## Prerequisites
 
-- PHP (sesuai kebutuhan Laravel di `composer.json`)
+- PHP (as specified by Laravel in `composer.json`)
 - Composer
 - Node.js & npm
 
-## Instalasi (Windows / PowerShell)
+## Installation (Windows / PowerShell)
 
-1. Install dependency backend
+1. Install backend dependencies
     - `composer install`
-2. Install dependency frontend
+2. Install frontend dependencies
     - `npm install`
-3. Siapkan environment
-    - Copy `.env.example` menjadi `.env`
+3. Set up the environment
+    - Copy `.env.example` to `.env`
     - Generate app key: `php artisan key:generate`
 4. Database
-    - Pastikan file mysql ada: `plateful-app`
-    - Jalankan migrasi & seeder: `php artisan migrate --seed`
-5. Jalankan aplikasi
+    - Ensure the MySQL database exists: `plateful-app`
+    - Run migrations & seeder: `php artisan migrate --seed`
+5. Run the application
     - Terminal 1: `php artisan serve`
     - Terminal 2: `npm run dev`
 
-Akses aplikasi di `http://127.0.0.1:8000`.
+Access the application at `http://127.0.0.1:8000`.
 
-## Struktur Modul (ringkas)
+## Module Structure (Summary)
 
 - Model: `app/Models` (`FoodItem`, `MealPlan`, `Donation`, `AnalyticsLog`, `User`)
 - Request/Controller: `app/Http/Requests`, `app/Http/Controllers`
@@ -50,13 +50,13 @@ Akses aplikasi di `http://127.0.0.1:8000`.
 
 ## Scripts
 
-- `npm run dev` — build assets untuk development
-- `npm run build` — build assets untuk production
+- `npm run dev` — build assets for development
+- `npm run build` — build assets for production
 
 ## Testing
 
-- Jalankan test: `php artisan test`
+- Run the tests: `php artisan test`
 
 ## Lisensi
 
-Internal project. Jika ingin dipublikasikan, tambahkan informasi lisensi di bagian ini.
+Internal project. If you plan to publish this, add license information here.
